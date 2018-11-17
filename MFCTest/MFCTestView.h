@@ -42,6 +42,7 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	afx_msg void OnToolsOptions();
+	afx_msg void OnTraceNew();
 };
 
 #ifndef _DEBUG  // debug version in MFCTestView.cpp

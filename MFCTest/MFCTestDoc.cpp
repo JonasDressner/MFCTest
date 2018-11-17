@@ -133,5 +133,11 @@ void CMFCTestDoc::Dump(CDumpContext& dc) const
 }
 #endif //_DEBUG
 
+CString CMFCTestDoc::GetData()
+{
+	CString s;
+	s.Format(L"Hallo");
+	return s;
+}
 
 // CMFCTestDoc commands

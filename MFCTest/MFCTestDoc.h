@@ -17,6 +17,7 @@ public:
 
 // Operations
 public:
+	CString GetData();
 
 // Overrides
 public:

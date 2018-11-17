@@ -12,6 +12,7 @@
 #include "MFCTestDoc.h"
 #include "MFCTestView.h"
 #include "OptionsDlg.h"
+#include "TraceDlg.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -26,6 +27,7 @@ BEGIN_MESSAGE_MAP(CMFCTestView, CView)
 	ON_WM_CONTEXTMENU()
 	ON_WM_RBUTTONUP()
 	ON_COMMAND(ID_TOOLS_OPTIONS, &CMFCTestView::OnToolsOptions)
+	ON_COMMAND(ID_TRACE_NEW, &CMFCTestView::OnTraceNew)
 END_MESSAGE_MAP()
 
 // CMFCTestView construction/destruction
@@ -50,7 +52,7 @@ BOOL CMFCTestView::PreCreateWindow(CREATESTRUCT& cs)
 
 // CMFCTestView drawing
 
-void CMFCTestView::OnDraw(CDC* /*pDC*/)
+void CMFCTestView::OnDraw(CDC* pDC)
 {
 	CMFCTestDoc* pDoc = GetDocument();
 	ASSERT_VALID(pDoc);
@@ -58,6 +60,12 @@ void CMFCTestView::OnDraw(CDC* /*pDC*/)
 		return;
 
 	// TODO: add draw code for native data here
+	CString s = pDoc->GetData();   // Returns a CString
+	CRect rect;
+	GetClientRect(&rect);
+
+	pDC->SetTextAlign(TA_BASELINE | TA_CENTER);
+	pDC->TextOut(rect.right / 2, rect.bottom / 2, s, s.GetLength());
 }
 
 void CMFCTestView::OnRButtonUp(UINT /* nFlags */, CPoint point)
@@ -102,4 +110,13 @@ void CMFCTestView::OnToolsOptions()
 {
 	COptionsDlg dlgOptions;
 	dlgOptions.DoModal();
+}
+
+
+void CMFCTestView::OnTraceNew()
+{
+	// TODO: Add your command handler code here
+	CTraceDlg traceDlg;
+	traceDlg.DoModal();
+
 }

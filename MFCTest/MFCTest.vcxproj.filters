@@ -42,6 +42,9 @@
     <ClInclude Include="OptionsDlg.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TraceDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MFCTest.cpp">
@@ -60,6 +63,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="OptionsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TraceDlg.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

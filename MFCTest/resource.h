@@ -29,20 +29,28 @@
 #define ID_VIEW_APPLOOK_WINDOWS_7       219
 #define IDS_EDIT_MENU                   306
 #define IDD_DIALOG_OPTIONS              310
+#define IDD_DIALOG_TRACE                312
 #define IDC_EDIT_TEXT                   1001
 #define IDC_RADIO_RED                   1002
 #define IDC_RADIO_BLUE                  1003
 #define IDC_EDIT_POS_X                  1004
 #define IDC_EDIT_POS_Y                  1005
+#define IDC_EDIT_INTERFACE              1006
+#define IDC_STATIC_INTERFACE            1007
+#define IDC_BUTTON_START                1008
+#define IDC_BUTTON2                     1009
+#define IDC_BUTTON_STOP                 1009
+#define IDC_STATIC_TEXT                 1010
 #define ID_TOOLS_OPTIONS                32771
+#define ID_TRACE_NEW                    32772
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        312
-#define _APS_NEXT_COMMAND_VALUE         32772
-#define _APS_NEXT_CONTROL_VALUE         1006
+#define _APS_NEXT_RESOURCE_VALUE        314
+#define _APS_NEXT_COMMAND_VALUE         32773
+#define _APS_NEXT_CONTROL_VALUE         1011
 #define _APS_NEXT_SYMED_VALUE           310
 #endif
 #endif
