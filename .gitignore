@@ -205,3 +205,4 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 *.tlog
+/MFCTest/Debug
